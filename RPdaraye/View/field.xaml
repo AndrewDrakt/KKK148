@@ -1,0 +1,35 @@
+﻿<Window x:Class="RPdaraye.field"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RPdaraye"
+        mc:Ignorable="d"
+        Title="field" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Stretch"  Grid.RowSpan="5"  VerticalAlignment="Top" Grid.ColumnSpan="5" Source="/2023-05-10 (2).png"/>
+
+        <Button x:Name="error" Content="ПУERROR" HorizontalAlignment="Left"  VerticalAlignment="Bottom"  Grid.Row="4" Background="White"/>
+        <Button x:Name="house" Grid.Column="1" Content="Круглый дом" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="1" Background="White"/>
+        <Button x:Name="shop" Grid.Column="3" Content="Магазин" HorizontalAlignment="Right"  VerticalAlignment="Center" Grid.Row="2" Background="White"/>
+        <Button x:Name="dvor" Grid.Column="2" Content="Двор" HorizontalAlignment="Left"  VerticalAlignment="Top" Grid.Row="1" Background="White"/>
+        <Button x:Name="TC" Grid.Column="4" Content="Торговый центр" HorizontalAlignment="Center"  VerticalAlignment="Center" Background="White" Grid.Row="3"/>
+        <TextBlock Grid.Column="4" HorizontalAlignment="Right"  Grid.Row="4" TextWrapping="Wrap" Text="Карта район балласов" Background="White" VerticalAlignment="Bottom"/>
+        <Button x:Name="stadion" Content="Стадион" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center"/>
+        <TextBlock x:Name="descr" Grid.Column="1" Grid.ColumnSpan="3"  HorizontalAlignment="Center" Grid.Row="4" TextWrapping="Wrap" Text="{Binding Selected.Descr}" VerticalAlignment="Center" FontSize="16"/>
+    </Grid>
+</Window>
