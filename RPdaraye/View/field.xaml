@@ -9,7 +9,7 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
@@ -24,7 +24,7 @@
         <Image HorizontalAlignment="Stretch"  Grid.RowSpan="5"  VerticalAlignment="Top" Grid.ColumnSpan="5" Source="/2023-05-10 (2).png"/>
 
         <Button x:Name="error" Content="ПУERROR" HorizontalAlignment="Left"  VerticalAlignment="Bottom"  Grid.Row="4" Background="White"/>
-        <Button x:Name="house" Grid.Column="1" Content="Круглый дом" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="1" Background="White"/>
+        <Button x:Name="house" Grid.Column="1" Content="Круглый дом" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="1" Background="White" Click="open_dvor"/>
         <Button x:Name="shop" Grid.Column="3" Content="Магазин" HorizontalAlignment="Right"  VerticalAlignment="Center" Grid.Row="2" Background="White"/>
         <Button x:Name="dvor" Grid.Column="2" Content="Двор" HorizontalAlignment="Left"  VerticalAlignment="Top" Grid.Row="1" Background="White"/>
         <Button x:Name="TC" Grid.Column="4" Content="Торговый центр" HorizontalAlignment="Center"  VerticalAlignment="Center" Background="White" Grid.Row="3"/>

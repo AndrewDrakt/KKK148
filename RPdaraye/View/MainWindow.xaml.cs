@@ -30,14 +30,16 @@ namespace RPdaraye
         {
             namespassword.username = name.Text;
             string pole = name.Text + password.Password;
-            foreach (var a in namespassword.usernamespassword)
+
+            foreach (string a in namespassword.usernamespassword)
             {
                 if (a == pole)
                 {
                     newWindow();
                     Close();
+                    break;
                 }
-                else
+                else if(a != pole)
                 {
                     error();
                     if (namespassword.result == true)
@@ -46,8 +48,8 @@ namespace RPdaraye
                         newWindow();
                         Close();
                         namespassword.result = !namespassword.result;
+                        break;
                     }
-
                 }
             }
             if (namespassword.usernamespassword.Count == 0)
@@ -62,7 +64,6 @@ namespace RPdaraye
                 }
             }
         }
-
         private static void newWindow()
         {
             field field = new field();

@@ -10,24 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace RPdaraye
 {
     /// <summary>
-    /// Логика взаимодействия для field.xaml
+    /// Логика взаимодействия для srpavka1.xaml
     /// </summary>
-    public partial class field : Window
+    public partial class srpavka1 : Page
     {
-        public field()
+        public srpavka1()
         {
             InitializeComponent();
-        }
-        private void open_dvor(object sender, RoutedEventArgs e)
-        {
-            skver skver = new skver();
-            skver.Show();
-            Close();
         }
     }
 }

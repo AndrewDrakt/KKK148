@@ -1,0 +1,34 @@
+﻿<Page x:Class="RPdaraye.srpavka1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RPdaraye"
+      mc:Ignorable="d" 
+      d:DesignHeight="420" d:DesignWidth="200"
+      Title="srpavka1">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Background="White" Grid.RowSpan="8" >
+            <Rectangle Fill="White" Width="20" Height="100" Margin="10" />
+        </StackPanel>
+        <TextBlock Text="   /it- описывает действия от третьего лица " TextWrapping="Wrap" FontSize="13"/>
+        <TextBlock Grid.Row="1" Text="  /do- описывает Ваше действие " TextWrapping="Wrap" FontSize="13"/>
+        <TextBlock Grid.Row="2" Text="  ? сказать от неопределённого имени " TextWrapping="Wrap" FontSize="13"/>
+        <TextBlock Grid.Row="3" Text="  [[- нонРП сообщения " TextWrapping="Wrap" FontSize="13"/>
+        <TextBlock Grid.Row="4" Text="  /roll- позволяет получить случайное число в диапазоне от 0 до 100 " TextWrapping="Wrap" FontSize="13"/>
+        <TextBlock Grid.Row="5" Text="  /w- сказать шёпотом" TextWrapping="Wrap" FontSize="13"/>
+        <TextBlock Grid.Row="6" Text="  /s- крикнуть" TextWrapping="Wrap" FontSize="13"/>
+    </Grid>
+
+</Page>

@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace RPdaraye.ViewModel.Helpers
 {
-    internal class bilding : INotifyPropertyChanged
+    internal class bilding /*: INotifyPropertyChanged*/
     {
         public event PropertyChangedEventHandler property;
         protected void OnPropertyChanched([CallerMemberName] string name = null)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+          /*  PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));*/
         }
     }
 }
