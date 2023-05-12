@@ -23,15 +23,12 @@
         <MediaElement x:Name="ambient" LoadedBehavior="Manual"/>
         <Image Grid.Row="1" Grid.ColumnSpan="4" Grid.RowSpan="3" Source="/ViewModel/2023-05-12 (2).png" Stretch="Fill"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Локация: двор. Время: неопределено." Grid.ColumnSpan="3" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
-        
         <ListBox Grid.ColumnSpan="2" x:Name="chat" Grid.Row="3" FontSize="18" Background="#4C939393" BorderBrush="#00ABADB3" FontFamily="Bahnschrift" Foreground="White" FontWeight="Bold" >
-
         </ListBox>
         <TextBox x:Name="txf" HorizontalAlignment="Stretch" Grid.ColumnSpan="2" Grid.Row="4" TextWrapping="Wrap" Text="Сообщение..." VerticalAlignment="Stretch" BorderBrush="Black" Background="Transparent" FontSize="16" FontWeight="Bold" />
         <Button x:Name="send_b" Grid.Column="2" Content="Отправить" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Stretch" Background="#FF41D127" Foreground="White" FontWeight="Bold" FontSize="16" Click="send" Grid.RowSpan="2"/>
         <Frame x:Name="openSP" Grid.Column="3" Grid.RowSpan="3" Grid.Row="1" NavigationUIVisibility="Hidden"/>
         <Button x:Name="spr" Grid.Column="3" Content="Справка" HorizontalAlignment="Right" Grid.Row="4" VerticalAlignment="Stretch" FontSize="16" Background="#FFF3F3F3" Click="spravka"/>
         <Button x:Name="back" Grid.Column="3" Content="Назад" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Stretch"  FontSize="16" Click="btn_back" Background="#FFF3F3F3"/>
-
     </Grid>
 </Window>
