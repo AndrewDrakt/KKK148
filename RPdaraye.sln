@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPdaraye", "RPdaraye\RPdaraye.csproj", "{12A272E2-CBB1-4EEF-8C3F-12D2EDF00C14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPdaraye8", "RPdaraye\RPdaraye8.csproj", "{12A272E2-CBB1-4EEF-8C3F-12D2EDF00C14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xmltextwriter", "xmltextwriter\xmltextwriter.csproj", "{9CEF6C38-9B98-4797-9005-9C3E3B6466EA}"
 EndProject

@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RPdaraye\RPdaraye.csproj" />
+    <ProjectReference Include="..\RPdaraye\RPdaraye8.csproj" />
   </ItemGroup>
 
 </Project>
