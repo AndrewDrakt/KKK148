@@ -24,7 +24,7 @@ namespace RPdaraye
         bool _IsTrue= false;
         private Socket server;
         private List<Socket> sockets;
-        
+        Random rand = new Random();
         public skver()
         {
             InitializeComponent();
@@ -38,6 +38,7 @@ namespace RPdaraye
         private void send(object sender, RoutedEventArgs e)
         {
             /* while (true) {*/
+
             SendMassage(txf.Text);
             // }
         }
@@ -54,6 +55,16 @@ namespace RPdaraye
         }
         private async Task SendMassage(string message)
         {
+            bool a = txf.Text.Contains("/roll");
+            bool b = txf.Text.Contains("/do");
+            if (a)
+            {
+                message = namespassword.username + " выпадает шанс: " + rand.Next(0, 101);
+            }
+            else if (b)
+            {
+                message = namespassword.username + txf.Text.Substring(3);
+            }
             byte[] bytes = Encoding.UTF8.GetBytes(message);
             await server.SendAsync(bytes, SocketFlags.None);
         }

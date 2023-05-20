@@ -72,7 +72,7 @@ namespace RPdaraye
         private static void error()
         {
             info warn = new info();
-            warn.Show();
+            warn.ShowDialog();
         }
     }
     }
